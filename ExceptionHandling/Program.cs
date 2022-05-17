@@ -45,7 +45,7 @@ class Program
             Console.WriteLine("Pick a number to divide each number in the list.");
             int userNum = Convert.ToInt32(Console.ReadLine());
            
-            for (int i = 0; i < intList[i].Count; i++)
+            for (int i = 0; i < intList.Count; i++)
                 {
                     int listDivInp = intList[i] / userNum;
                     Console.WriteLine(listDivInp);
