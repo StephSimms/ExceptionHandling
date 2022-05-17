@@ -38,21 +38,32 @@ class Program
 
 
         //Exception Assignment 
-
-        List<int> numbers= new List<int>() { 100, 75, 50, 25, 5 };
-        Console.WriteLine("Pick a number to divide each number in the list.");
-        int numberOne = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Dividing the two...");
-        
-        Console.ReadLine();
-
-        foreach ( numbers in new List)
+        try
         {
-            int numberTwo = numbers / numberOne;
-                      
-        }
 
-        Console.WriteLine(numbers + " divided by " + numberOne + " equals ");
+            List<int> numbers = new List<int>() { 100, 75, 50, 25, 5 };
+            Console.WriteLine("Pick a number to divide each number in the list.");
+            int numberOne = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Dividing the two...");
+
+            Console.ReadLine();
+        }
+        catch (FormatException ex)
+        {
+
+            foreach (int numbers in new List)
+            {
+                int numberTwo = numbers / numberOne;
+                Console.WriteLine(numbers + " divided by " + numberOne + " equals " + numberTwo);
+
+            }
+        catch (DivideByZeroException ex)
+        {
+            Console.WriteLine("The Program has emerged from a try/catch block");
+        }
+        
+           
+        
         Console.ReadLine();
 
     }
