@@ -41,30 +41,33 @@ class Program
         try
         {
 
-            List<int> numbers = new List<int>() { 100, 75, 50, 25, 5 };
+            List<int> intList = new List<int>() { 100, 75, 50, 25, 5 };
             Console.WriteLine("Pick a number to divide each number in the list.");
-            int numberOne = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Dividing the two...");
-
-            Console.ReadLine();
+            int userNum = Convert.ToInt32(Console.ReadLine());
+           
+            for (int i = 0; i < intList[i].Count; i++)
+                {
+                    int listDivInp = intList[i] / userNum;
+                    Console.WriteLine(listDivInp);
+                }
         }
         catch (FormatException ex)
         {
-
-            foreach (int numbers in new List)
-            {
-                int numberTwo = numbers / numberOne;
-                Console.WriteLine(numbers + " divided by " + numberOne + " equals " + numberTwo);
-
-            }
+            Console.WriteLine("Please choose a positive whole number.");
+        }
         catch (DivideByZeroException ex)
         {
-            Console.WriteLine("The Program has emerged from a try/catch block");
+            Console.WriteLine("Please do not try to divide by zero.");
+        }
+        finally
+
+        {
+            Console.ReadLine();
         }
         
            
         
-        Console.ReadLine();
+        
 
     }
 }
