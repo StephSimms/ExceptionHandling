@@ -40,20 +40,19 @@ class Program
         //Exception Assignment 
 
         List<int> numbers= new List<int>() { 100, 75, 50, 25, 5 };
-        int numberOne = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine("Pick a number to divide each number in the list.");
-        int numberTwo = Convert.ToInt32(Console.ReadLine());
+        int numberOne = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine("Dividing the two...");
-        int numberThree = numberOne / numberTwo;
+        
+        Console.ReadLine();
 
-        for (int numberOne = 0; numberOne < numbers.Length; numberOne++)
+        foreach ( numbers in new List)
         {
-            {
-                numbers= numberOne + ;
-            }
+            int numberTwo = numbers / numberOne;
+                      
         }
 
-        Console.WriteLine();
+        Console.WriteLine(numbers + " divided by " + numberOne + " equals ");
         Console.ReadLine();
 
     }
