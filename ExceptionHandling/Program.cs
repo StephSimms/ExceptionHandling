@@ -38,39 +38,69 @@ class Program
 
 
         //Exception Assignment 
+        //try
+        //{
+
+        //    List<int> intList = new List<int>() { 100, 75, 50, 25, 5 };
+        //    Console.WriteLine("Pick a number to divide each number in the list.");
+        //    int userNum = Convert.ToInt32(Console.ReadLine());
+
+        //    for (int i = 0; i < intList.Count; i++)
+        //        {
+        //            int listDivInp = intList[i] / userNum;
+        //            Console.WriteLine(listDivInp);
+        //        }
+        //}
+        //catch (FormatException ex)
+        //{
+        //    Console.WriteLine("Please choose a positive whole number.");
+        //}
+        //catch (DivideByZeroException ex)
+        //{
+        //    Console.WriteLine("Please do not try to divide by zero.");
+        //}
+        //finally
+
+        //{
+        //    Console.ReadLine();
+        //}
+
+
+        //Exception Handling Assignment Module 8
+
+
         try
         {
-
-            List<int> intList = new List<int>() { 100, 75, 50, 25, 5 };
-            Console.WriteLine("Pick a number to divide each number in the list.");
+            Console.WriteLine("What is your age?");
             int userNum = Convert.ToInt32(Console.ReadLine());
-           
-            for (int i = 0; i < intList.Count; i++)
-                {
-                    int listDivInp = intList[i] / userNum;
-                    Console.WriteLine(listDivInp);
-                }
-        }
-        catch (FormatException ex)
-        {
-            Console.WriteLine("Please choose a positive whole number.");
-        }
-        catch (DivideByZeroException ex)
-        {
-            Console.WriteLine("Please do not try to divide by zero.");
-        }
-        finally
 
-        {
+            Console.WriteLine("That's awesome, you are: " + userNum);
             Console.ReadLine();
         }
+
+        catch
+
+        {
+            Console.WriteLine("Don't be silly, entering zero or negative numbers will not work!");
+            return;
+        }
+        catch (Exception)
+        { 
+               Console.WriteLine("Ooops, an error occurred.  Please contact your system administrator.");
+            return;    
+        }
+            
         
-           
         
+            Console.ReadLine();
         
 
+
+
+
+
+        
     }
-}
 
 
 
